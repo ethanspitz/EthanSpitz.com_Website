@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"lin",
+				"line_follower"
+			],
+			[
+				"matrix",
+				"matrix_readme"
+			],
+			[
+				"documen",
+				"document"
+			],
+			[
+				"sty",
+				"style"
+			],
+			[
 				"_",
 				"_blank"
 			],
@@ -20,19 +36,11 @@
 	"buffers":
 	[
 		{
-			"file": "/C/Users/Spitze/Desktop/Untitled (1).tex",
+			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 6455,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Spitze/Downloads/pyserial-2.6.tar/dist/pyserial-2.6/pyserial-2.6/README.txt",
-			"settings":
-			{
-				"buffer_size": 1237,
-				"line_ending": "Unix"
 			}
 		}
 	],
@@ -64,6 +72,16 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Spitze/Desktop/EthanSpitz.com_Website/js/wiky.js",
+		"/C/Users/Spitze/Desktop/EthanSpitz.com_Website/js/wiky.css",
+		"/C/Users/Spitze/Desktop/EthanSpitz.com_Website/js/bootstrap.js",
+		"/C/Users/Spitze/Downloads/bootstrap (1)/bootstrap/js/bootstrap.js",
+		"/C/Users/Spitze/Desktop/EthanSpitz.com_Website/js/smoothscroll.js",
+		"/C/Users/Spitze/Desktop/EthanSpitz.com_Website/js/Markdown.Converter.js",
+		"/C/Users/Spitze/Desktop/EthanSpitz.com_Website/js/github-files",
+		"/C/Users/Spitze/Desktop/Untitled (1).tex",
+		"/C/Users/Spitze/Downloads/pyserial-2.6.tar/dist/pyserial-2.6/pyserial-2.6/README.txt",
+		"/C/Users/Spitze/Downloads/reg.py",
 		"/C/Users/Spitze/Desktop/EthanSpitz.com_Website/css/bootstrap.css",
 		"/C/Users/Spitze/Downloads/Powerpoints/Feb 1 Mind Over Money.pptx",
 		"/C/Users/Spitze/Downloads/Powerpoints/EnvRes Jan29 2013WelfareEcon.ppt",
@@ -104,6 +122,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"line",
 			"row",
 			"font-f",
 			"h1",
@@ -125,54 +144,30 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/Users/Spitze/Desktop/Untitled (1).tex",
+					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 6455,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1107,
+								1107
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 36.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/Users/Spitze/Downloads/pyserial-2.6.tar/dist/pyserial-2.6/pyserial-2.6/README.txt",
-					"settings":
-					{
-						"buffer_size": 1237,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								585,
-								526
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -189,7 +184,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 34.0
 	},
 	"layout":
 	{
