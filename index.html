@@ -43,7 +43,7 @@
               <li><a href="#line_follower">IED Line Follower</a></li>
             </ul>
           </li>
-          <li><a href="http://www.linkedin.com/in/ethanspitz" target="_blank">LinkedIn</a>
+          <li><a href="http://www.linkedin.com/in/ethanspitz" target="_blank">LinkedIn</a></li>
           <!-- <li><a href="resume.pdf">R&#233;sum&#233;</a></li> until updated resume -->
     		</ul>
     	</div>
@@ -63,12 +63,12 @@
         <h1>Projects</h1>
         <br>
         <div id="44_rgb_led_matrix">
-            <h2>4x4 RGB LED Matrix</h2><img src="img/tn/led_matrix_building-S.jpg" align="left" class="img-polaroid"> I started building this LED Matrix as a test for my plans to build a much larger one, perhaps 10x10 or larger. The design works by matrixing RGB (Red Green Blue) LEDs with shift registers and an Arduino Nano. The original design uses <a href="http://www.ti.com/lit/ds/symlink/sn74ls164.pdf" target="_blank">74164 shift registers</a>. After programming the Arduino for the first time, I was able to make it do full display patterns, however, if I wanted to do anything that didn't have all the LEDs lit (and some patterns that had all LEDs lit still didn't work), the colors and patterns that I expected was not the outcome. This was due to using shift registers without an output register. This meant while the data was being shifted in via serial, each bit was being output for the fractions of a second while the data filled the register. The fix the problem, I replaced each 74164 with a <a href="http://www.nxp.com/documents/data_sheet/74HC_HCT595.pdf">74595</a> which has an output register. This means that while data was being shifted in, it outputs the old data until I shift all the data in the shift register into the output register. I am currently in the stage of designing a PCB version of the circuit and a way to control each panel at the same time. The hardware design can be found on my GitHub, <a href="https://github.com/ethanspitz/4x4LEDMatrix" target="_blank">ethanspitz/4x4LEDMatrix</a>. My plans for the hardware on the PCB are dynamically rendered from the README.md on the GitHub Page:
+            <h2>4x4 RGB LED Matrix</h2><img src="img/tn/led_matrix_building-S.jpg" align="left" class="img-polaroid">I started building this LED Matrix as a test for my plans to build a much larger one, perhaps 10x10 or larger. The design works by matrixing RGB (Red Green Blue) LEDs with shift registers and an Arduino Nano. The original design uses <a href="http://www.ti.com/lit/ds/symlink/sn74ls164.pdf" target="_blank">74164 shift registers</a>. After programming the Arduino for the first time, I was able to make it do full display patterns, however, if I wanted to do anything that didn't have all the LEDs lit (and some patterns that had all LEDs lit still didn't work), the colors and patterns that I expected was not the outcome. This was due to using shift registers without an output register. This meant while the data was being shifted in via serial, each bit was being output for the fractions of a second while the data filled the register. The fix the problem, I replaced each 74164 with a <a href="http://www.nxp.com/documents/data_sheet/74HC_HCT595.pdf">74595</a> which has an output register. This means that while data was being shifted in, it outputs the old data until I shift all the data in the shift register into the output register. I am currently in the stage of designing a PCB version of the circuit and a way to control each panel at the same time. The hardware design can be found on my GitHub, <a href="https://github.com/ethanspitz/4x4LEDMatrix" target="_blank">ethanspitz/4x4LEDMatrix</a>. My plans for the hardware on the PCB are dynamically rendered from the README.md on the GitHub Page:
 
             <script type="text/javascript">
             $.getGithubFileByFilePath("ethanspitz", "4x4LEDMatrix", "README.md", function(contents) {$("#matrix_readme").html(Wiky.toHtml(contents))},6)
             </script>
-            <div class="well" id="matrix_readme" style="font-size:16px;">README.md not loading....</div>
+            <div class="well well-small" id="matrix_readme" style="font-size:16px;">README.md not loading....</div>
 
         </div>
 
