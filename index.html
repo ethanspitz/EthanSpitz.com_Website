@@ -23,8 +23,10 @@
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/smoothscroll.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/base64.js"></script>
     <script src="js/github-files.js"></script>
     <script src="js/wiky.js"></script>
+
 
   </head>
   <body data-spy="scroll" data-target=".navbar">
@@ -40,7 +42,7 @@
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects</a>
             <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
               <li><a href="#44_rgb_led_matrix">4x4 RGB LED Matrix</a></li>
-              <li><a href="#line_follower">IED Line Follower</a></li>
+              <li><a href="#line_follower">Line Follower</a></li>
             </ul>
           </li>
           <li><a href="http://www.linkedin.com/in/ethanspitz" target="_blank">LinkedIn</a></li>
@@ -68,7 +70,7 @@
             <script type="text/javascript">
             $.getGithubFileByFilePath("ethanspitz", "4x4LEDMatrix", "README.md", function(contents) {$("#matrix_readme").html(Wiky.toHtml(contents))},6)
             </script>
-            <div class="well well-small" id="matrix_readme" style="font-size:16px;">README.md not loading....</div>
+            <div class="well well-small" id="matrix_readme" style="font-size:16px;">README.md not loading....Try enabling Javascript</div>
 
         </div>
 
