@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Ethan Spitz Homepage</title>
+    <meta charset="utf-8">
+    <title>Ethan Spitz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
@@ -40,7 +41,7 @@
     			<!--<li><a href="#projects">Projects</a></li>-->
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects</a>
-            <ul class="dropdown-menu" role="menu">
+            <ul class="dropdown-menu">
               <li><a href="#44_rgb_led_matrix">4x4 RGB LED Matrix</a></li>
               <li><a href="#line_follower">Line Follower</a></li>
             </ul>
@@ -66,7 +67,7 @@
         <h1>Projects</h1>
         <br>
         <div id="44_rgb_led_matrix">
-            <h2>4x4 RGB LED Matrix</h2><img src="img/tn/led_matrix_building-S.jpg" class="img-polaroid" style="margin-right:5px; float:left;">
+            <h2>4x4 RGB LED Matrix</h2><img src="img/tn/led_matrix_building-S.jpg" class="img-polaroid" alt="RGB LED Matrix" style="margin-right:5px; float:left;">
             I started building this LED Matrix as a test for my plans to build a much larger one, perhaps 10x10 or larger. The design works by matrixing RGB (Red Green Blue) LEDs with shift registers and an Arduino Nano. The original design uses <a href="http://www.ti.com/lit/ds/symlink/sn74ls164.pdf" target="_blank">74164 shift registers</a>. After programming the Arduino for the first time, I was able to make it do full display patterns, however, if I wanted to do anything that didn't have all the LEDs lit (and some patterns that had all LEDs lit still didn't work), the colors and patterns that I expected was not the outcome. This was due to using shift registers without an output register. This meant while the data was being shifted in via serial, each bit was being output for the fractions of a second while the data filled the register. The fix the problem, I replaced each 74164 with a <a href="http://www.nxp.com/documents/data_sheet/74HC_HCT595.pdf">74595</a> which has an output register. This means that while data was being shifted in, it outputs the old data until I shift all the data in the shift register into the output register. I am currently in the stage of designing a PCB version of the circuit and a way to control each panel at the same time. The hardware design can be found on my GitHub, <a href="https://github.com/ethanspitz/4x4LEDMatrix" target="_blank">ethanspitz/4x4LEDMatrix</a>. My plans for the hardware on the PCB are dynamically rendered from the README.md on the GitHub Page:
 
             <script type="text/javascript">
@@ -83,7 +84,7 @@
     </div>
     <div id="footer" style="background-color:#eee; padding:20px; margin:20px; -webkit-border-radius:6px; -moz-border-radius: 6px; border-radius: 6px;">
       <div class="container muted">
-        Copyright &#64; 2013 Ethan Spitz. Built with <a href="http://twitter.github.com/bootstrap">Twitter Bootstrap</a>
+        Copyright &#64; 2013 Ethan Spitz. Built with <a href="http://twitter.github.com/bootstrap">Twitter Bootstrap</a>. <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fethanspitz.com%2F">Valid HTML5</a> Source Code on <a href="https://github.com/ethanspitz/EthanSpitz.com_Website">GitHub</a>.
       </div>
     </div>
   </body>
